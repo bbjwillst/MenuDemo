@@ -1,6 +1,6 @@
 ﻿namespace MenuDemo
 {
-    partial class MainFrm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
+            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tileBar = new DevExpress.XtraBars.Navigation.TileBar();
-            this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
+            this.MenuTileBarGroup = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
-            this.SetupNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.SetupTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.SetupNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.label_Setup = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.SetupNavigationPage.SuspendLayout();
@@ -52,13 +52,13 @@
             this.tileBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.tileBar.DropDownButtonWidth = 30;
             this.tileBar.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            this.tileBar.Groups.Add(this.tileBarGroupTables);
+            this.tileBar.Groups.Add(this.MenuTileBarGroup);
             this.tileBar.IndentBetweenGroups = 10;
             this.tileBar.IndentBetweenItems = 10;
             this.tileBar.ItemPadding = new System.Windows.Forms.Padding(8, 6, 12, 6);
             this.tileBar.Location = new System.Drawing.Point(0, 0);
-            this.tileBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.tileBar.MaxId = 4;
+            this.tileBar.Margin = new System.Windows.Forms.Padding(5);
+            this.tileBar.MaxId = 5;
             this.tileBar.MaximumSize = new System.Drawing.Size(0, 118);
             this.tileBar.MinimumSize = new System.Drawing.Size(117, 118);
             this.tileBar.Name = "tileBar";
@@ -68,68 +68,68 @@
             this.tileBar.SelectionBorderWidth = 2;
             this.tileBar.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
             this.tileBar.ShowGroupText = false;
-            this.tileBar.Size = new System.Drawing.Size(1037, 118);
+            this.tileBar.Size = new System.Drawing.Size(915, 118);
             this.tileBar.TabIndex = 1;
             this.tileBar.Text = "tileBar";
             this.tileBar.WideTileWidth = 150;
             this.tileBar.SelectedItemChanged += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileBar_SelectedItemChanged);
             // 
-            // tileBarGroupTables
+            // MenuTileBarGroup
             // 
-            this.tileBarGroupTables.Items.Add(this.SetupTileBarItem);
-            this.tileBarGroupTables.Name = "tileBarGroupTables";
-            this.tileBarGroupTables.Text = "TABLES";
+            this.MenuTileBarGroup.Items.Add(this.SetupTileBarItem);
+            this.MenuTileBarGroup.Name = "MenuTileBarGroup";
             // 
             // navigationFrame
             // 
             this.navigationFrame.Controls.Add(this.SetupNavigationPage);
             this.navigationFrame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationFrame.Location = new System.Drawing.Point(0, 118);
-            this.navigationFrame.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.navigationFrame.Margin = new System.Windows.Forms.Padding(5);
             this.navigationFrame.Name = "navigationFrame";
             this.navigationFrame.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.SetupNavigationPage});
             this.navigationFrame.SelectedPage = this.SetupNavigationPage;
-            this.navigationFrame.Size = new System.Drawing.Size(1037, 540);
+            this.navigationFrame.Size = new System.Drawing.Size(915, 486);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
-            // 
-            // SetupNavigationPage
-            // 
-            this.SetupNavigationPage.Controls.Add(this.labelControl1);
-            this.SetupNavigationPage.Name = "SetupNavigationPage";
-            this.SetupNavigationPage.Size = new System.Drawing.Size(1037, 540);
+            this.navigationFrame.TransitionType = DevExpress.Utils.Animation.Transitions.Push;
             // 
             // SetupTileBarItem
             // 
             this.SetupTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
-            tileItemElement5.Text = "Setup";
-            this.SetupTileBarItem.Elements.Add(tileItemElement5);
-            this.SetupTileBarItem.Id = 3;
+            tileItemElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            tileItemElement2.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
+            tileItemElement2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
+            tileItemElement2.Text = "设置";
+            this.SetupTileBarItem.Elements.Add(tileItemElement2);
+            this.SetupTileBarItem.Id = 4;
+            this.SetupTileBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
             this.SetupTileBarItem.Name = "SetupTileBarItem";
             // 
-            // labelControl1
+            // SetupNavigationPage
             // 
-            this.labelControl1.Location = new System.Drawing.Point(611, 235);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(33, 14);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Setup";
+            this.SetupNavigationPage.Controls.Add(this.label_Setup);
+            this.SetupNavigationPage.Name = "SetupNavigationPage";
+            this.SetupNavigationPage.Size = new System.Drawing.Size(915, 486);
             // 
-            // MainFrm
+            // label_Setup
+            // 
+            this.label_Setup.Location = new System.Drawing.Point(400, 205);
+            this.label_Setup.Name = "label_Setup";
+            this.label_Setup.Size = new System.Drawing.Size(24, 14);
+            this.label_Setup.TabIndex = 0;
+            this.label_Setup.Text = "设置";
+            // 
+            // MainForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 658);
+            this.ClientSize = new System.Drawing.Size(915, 604);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.tileBar);
-            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "MainForm";
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
             this.navigationFrame.ResumeLayout(false);
             this.SetupNavigationPage.ResumeLayout(false);
@@ -142,9 +142,9 @@
 
         private DevExpress.XtraBars.Navigation.TileBar tileBar;
         private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame;
-        private DevExpress.XtraBars.Navigation.TileBarGroup tileBarGroupTables;
+        private DevExpress.XtraBars.Navigation.TileBarGroup MenuTileBarGroup;
         private DevExpress.XtraBars.Navigation.TileBarItem SetupTileBarItem;
         private DevExpress.XtraBars.Navigation.NavigationPage SetupNavigationPage;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl label_Setup;
     }
 }

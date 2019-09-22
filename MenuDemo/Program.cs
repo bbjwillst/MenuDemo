@@ -20,7 +20,7 @@ namespace MenuDemo
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new MainFrm());
+            Application.Run(new MainForm());
         }
     }
 }
